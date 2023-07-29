@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: hsl(0, 60%, 20%);
+  --secondary-color: hsl(0, 60%, 35%);
+  --highlight-color: antiquewhite;
+
+  --text-primary-color: var(var(--primary-color));
+
+  --muted-color-100: azure;
+}
+
+body {
+  font-family: kanit;
+  padding: 50px;
+  background-color: var(--muted-color-100);
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper .app-title {
+  font-size: 60px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.post-list {
+  background-color: var(--highlight-color);
+  border-radius: 10px;
+  border: 5px solid var(--secondary-color);
+  padding: 40px;
+  width: 50%;
+}
+
+.post-list .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-list .post-item {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.post-list .post-content {
+  margin-bottom: 30px;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  padding: 5px;
+  width: 256px;
+  color: white;
+  font-size: 30px;
+  outline: none;
+  border: 5px solid var(--secondary-color);
+}
+
+/* Product List Styles */
+
+.product-heading {
+  color: var(--primary-color);
+  font-size: 60px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: var(--highlight-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+}
+
+/* Cart Styles  */
+
+.cart-heading {
+  color: var(--primary-color);
+  font-size: 60px;
+}
+
+.cart-item-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-item {
+  position: relative;
+  background: var(--highlight-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -30px;
+  top: -10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.cart-item .quantity-actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+.cart-item .quantity-actions .add-quantity {
+}
