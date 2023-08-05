@@ -8,6 +8,7 @@ const ProductToCart = () => {
     const handleAddToCart = (addIndex) => {
       const newProductItemList = [...productItemList];
       const newItemCartList = [...itemCartList];
+
   
       if (newItemCartList.includes(newProductItemList[addIndex]) !== true) {
         newProductItemList[addIndex].quantity = 1;
@@ -71,7 +72,7 @@ const ProductToCart = () => {
         <hr />
   
         <section className="cart">
-          <h1 className="cart-heading">Cart Total Price is {totalPrice} Baht</h1>
+          <h1 className="cart-heading" style={itemCartList.length !== 0 ?{ display: "block" }:{ display: "none" }}>Cart Total Price is {totalPrice} Baht</h1>
           <div className="cart-item-list">
             {itemCartList.map((item, index) => {
               return (
