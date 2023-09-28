@@ -92,6 +92,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   margin: 20px;
   max-width: 300px;
@@ -137,5 +138,5 @@ button {
   margin-top: 20px;
 }
 
-.cart-item .quantity-actions .add-quantity {
-}
+/* .cart-item .quantity-actions .add-quantity {
+} */
