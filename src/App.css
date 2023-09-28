@@ -19,6 +19,11 @@ body {
   padding: 50px;
   background-color: var(--muted-color-100);
 }
+img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
 
 .app-wrapper {
   display: flex;
@@ -58,6 +63,7 @@ body {
 }
 
 button {
+  margin-top: 10px;
   cursor: pointer;
   background-color: var(--secondary-color);
   border-radius: 30px;

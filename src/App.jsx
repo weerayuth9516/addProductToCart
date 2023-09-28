@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import ProductToCart from "./productToCart";
+import ProductToCart from "./conponent/productToCart";
 
 function App() {
  return (

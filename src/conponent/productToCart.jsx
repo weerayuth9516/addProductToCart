@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import products from "./data/products";
+import products from "../data/products";
 
 const ProductToCart = () => {
   const [itemCartList, setItemCartList] = useState([]);
