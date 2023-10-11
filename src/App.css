@@ -138,5 +138,11 @@ button {
   margin-top: 20px;
 }
 
-/* .cart-item .quantity-actions .add-quantity {
-} */
+@media screen and (max-width: 600px) {
+  .cart-item .quantity-actions{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
